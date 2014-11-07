@@ -1,4 +1,5 @@
 ---
+newrelic_enabled: True
 newrelic_loglevel: info
 newrelic_logfile: /var/log/newrelic/nrsysmond.log
 newrelic_proxy: False
