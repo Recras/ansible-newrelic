@@ -10,6 +10,9 @@ This role requires Ansible 1.4 higher and platforms listed in the metadata file.
 
 The variables that can be passed to this role and a brief description about them are as follows
 
+    # Provision New Relic Server Agent? Default True
+    newrelic_enabled: True
+    
     # License key
     newrelic_license_key: ab2fa361cd4d0d373833cad619d7bcc424d27c16
     
@@ -64,6 +67,11 @@ The variables that can be passed to this role and a brief description about them
 
     ---
     newrelic_license_key: ab2fa361cd4d0d373833cad619d7bcc424d27c16
+
+#### host_vars/development
+
+    ---
+    newrelic_enabled: False # Don't monitor development machines
 
 #### site.yml
 
